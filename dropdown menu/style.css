@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica:wght@200;400;500;600&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Geologica', sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nav li {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    padding: 0 .3rem;
+}
+
+a {
+    color: rgb(22, 54, 100);
+}
+
+li:hover{
+    background-color: rgb(167, 178, 193);
+}
+
+.nav {
+    height: 2.5rem;
+    background-color: rgb(193, 200, 210);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+
+.nav li ul {
+    display: none;
+    background-color: rgb(193, 200, 210);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.nav li ul li {
+    background-color: rgb(193, 200, 210);
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 5px;
+}
+
+.nav li ul li:hover {
+    background-color: rgb(167, 178, 193);
+}
+
+.nav li ul li a {
+    font-weight: 500;
+}
+
+.nav li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 2.7rem;
+}
+
+.ul-1 {
+    left: 574px;
+}
+
+.ul-2 {
+    left: 694px;
+}
+
+.li-all {
+    border-top: .01px solid rgb(167, 178, 193);
+}

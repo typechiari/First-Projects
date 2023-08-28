@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Drag and Drop</title>
+</head>
+<body>
+    <h1>Drag where it belongs</h1>
+
+    <!-- ondragstart: I specify what should happen when the element is dragged-->
+    <!-- draggable: I indicate that the element can be dragged-->
+ 
+    <div class="container c1">
+        <img src="lorodrag.jpg" alt="" draggable="true" ondragstart="drag(event)" id="parrot">
+        <img src="gatodrag.jpg" alt="" draggable="true" ondragstart="drag(event)" id="cat">
+        <img src="perritodrag.jpg" alt="" draggable="true" ondragstart="drag(event)" id="dog">
+    </div>
+
+    <!-- ondrop: I specify what succes when a dragged element is dropped-->
+    <!-- ondragover: I specify where can be dropped the element -->
+
+    <div class="container c2">
+        <div class="figure">
+            <div class="box" id="0" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>dog</h2>
+            </div>
+        </div>
+        <div class="figure">
+            <div class="box" id="1" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>parrot</h2>
+            </div>
+        </div>
+        <div class="figure">
+            <div class="box" id="2" ondrop="drop(event)" ondragover="allowDrop(event)">
+                <h2>cat</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="code.js"></script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&family=Wix+Madefor+Display:wght@400;500;600;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Wix Madefor Display', sans-serif;
+    box-sizing: border-box;
+    transition: all .2s;
+}
+
+body {
+    background-color: rgb(43, 51, 61);
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+    font-weight: 700;
+    color: rgb(229, 228, 230);
+}
+
+.item {
+    background-color: rgb(169, 218, 209);
+    position: relative;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1 {
+    background-image: url(programmingphoto.jpeg);
+}
+
+.img2 {
+    background-image: url(chiariflare.jpeg);
+}
+
+.img3 {
+    background-image: url(readingphoto.jpeg);
+}
+
+
+.container {
+    height: 350px;
+    width: 600px;
+    padding: 5px;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    gap: 2%;
+}
+
+.title {
+    font-size: 1.2rem;
+    position: absolute;
+    rotate: -90deg;
+    left: 10px;
+    bottom: -10px;
+    transform-origin: left top;
+    color: rgb(229, 228, 230);
+    text-shadow:  2px 2px 5px rgb(0, 0, 0);
+}
+
+
+
+.name {
+    font-size: 1.2rem;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 10px;
+    font-size: .9rem;
+    color: rgb(229, 228, 230);
+    text-shadow:  1px 1px 3px rgb(43, 51, 61);
+}
